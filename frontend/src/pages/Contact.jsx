@@ -15,8 +15,8 @@ const Contact = () => {
 
         <div className='flex flex-col justify-center items-start gap-6'> 
           <p className='font-semibold text-xl'>Our Store</p>
-          <p className='text-gray-500'>Sector 10, Uttara Model Town <br />Dhaka-1230</p>
-          <p className='text-gray-500'>Tel: +8804875465 <br />Email: admin@gmail.com </p>
+          <p className='text-gray-500'>LNCT GROUP shopEZ-TEAM BHOPAL <br />MP-462016</p>
+          <p className='text-gray-500'>Tel: +919804875465 <br />Email: shopEZteam@gmail.com </p>
           <p className='font-semibold text-xl text-gray-600'>Careers at Forever</p>
           <p className='text-gray-500'>Learn more about our teams and job openings.</p>
 
