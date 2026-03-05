@@ -2,7 +2,8 @@ import express from "express";
 import cors from "cors";
 import "dotenv/config";
 import connectDB from "./config/mongodb.js";
-import connectCloudinary from "./config/cloudinary.js";
+// import connectCloudinary from "./config/cloudinary.js";
+
 import userRouter from "./routes/userRoute.js";
 import productRouter from "./routes/productRoute.js";
 import cartRouter from "./routes/cartRoute.js";
@@ -10,9 +11,9 @@ import orderRouter from "./routes/orderRoute.js";
 
 const app = express();
 
-// Connect Database & Cloudinary
+// Connect Database
 connectDB();
-connectCloudinary();
+// connectCloudinary();
 
 // Middlewares
 app.use(express.json());
@@ -33,5 +34,5 @@ app.get("/", (req, res) => {
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log("Server running on port " + PORT);
 });
