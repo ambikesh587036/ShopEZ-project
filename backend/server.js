@@ -13,24 +13,20 @@ const app = express();
 
 // Connect Database
 connectDB();
-// connectCloudinary();   // Cloudinary disabled
+// connectCloudinary();
 
-// Middlewares
 app.use(express.json());
 app.use(cors());
 
-// API Routes
 app.use("/api/user", userRouter);
 app.use("/api/product", productRouter);
 app.use("/api/cart", cartRouter);
 app.use("/api/order", orderRouter);
 
-// Test Route
 app.get("/", (req, res) => {
   res.send("API Is Working Properly");
 });
 
-// Start Server
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
